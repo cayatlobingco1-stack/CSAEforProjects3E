@@ -1,0 +1,49 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+.note{
+    color: green;
+}
+#alert{
+    color: red;
+    font-size: 20px;
+}
+
+body {
+    background-color: pink;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: blue;
+}
+nav a:hover { text-decoration: underline;
+font-size:25px }
+
+:root {
+    --brand: #ff0000;
+    --space: 1rem;
+}
+
+.btn{
+    background-color: var(--brand);
+    color: white;
+    padding: var(--space);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bg1 {
+    background-color: lightblue;
+}
