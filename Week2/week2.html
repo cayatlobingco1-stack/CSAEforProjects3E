@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Notices - UNP</title>
+    <title>DMMMSU - Campus Notices</title>
     <link rel="stylesheet" href="week2.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,69 +11,63 @@
 
 <div class="container">
 
-    <!-- Header -->
+    <!-- Header: Logo + DMMMSU -->
     <header class="header">
-        <img src="UNPlogo.webp" alt="UNP Logo" class="logo">
+        <img src="OIP (1).jpg" alt="DMMMSU Logo" class="logo">
         <div class="header-text">
-            <h1>University of Northern Philippines</h1>
-            <p>Vigan City, Ilocos Sur • Campus Bulletin & Notice Board</p>
+            <h1>DMMMSU</h1>
+            <p>Don Mariano Marcos Memorial State University • South La Union Campus</p>
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation: Home | About | Contact -->
     <nav class="navbar">
-        <a href="index.html" class="active">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT US</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Main Content Grid -->
-    <main class="main-grid">
-        
-        <!-- Left Side: Campus Highlights / Gallery -->
-        <section class="card gallery-section">
-            <h3>Campus Highlights</h3>
-            <p class="section-desc">Featured snapshots and updates around the university.</p>
-            
-            <div class="gallery">
-                <div class="img-card">
-                    <img src="UNPl.webp" alt="campus">
+    <!-- Main 2-Column Layout -->
+    <main class="main-content">
+
+        <!-- Left: 3 Pictures -->
+        <section class="pictures-panel">
+            <h3>3 Pictures</h3>
+            <div class="three-pics">
+                <div class="pic-box">
+                    <img src="SlucMain.webp" alt="Campus Picture 1">
                 </div>
-                <div class="img-card">
-                    <img src="university-of-northern-philippines-1024x706.webp" alt="campus">
+                <div class="pic-box">
+                    <img src="Highschool.webp" alt="Campus Picture 2">
                 </div>
-                <div class="img-card">
-                    <img src="Campus-image_TXaYf-pTIV.webp" alt="campus">
+                <div class="pic-box">
+                    <img src="comscie.jpg" alt="Campus Picture 3">
                 </div>
             </div>
         </section>
 
-        <!-- Right Side: Post a Notice -->
-        <section class="card form-section">
-            <h3>Post a Notice</h3>
-            <p class="section-desc">Share important announcements with UNP students and faculty.</p>
-
+        <!-- Right: Title, Message, Post Notice -->
+        <section class="form-panel">
             <form>
                 <div class="form-group">
-                    <label for="title">Notice Title</label>
-                    <input type="text" id="title" name="title" placeholder="" required>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter notice title..." required>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message Details</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Write the full announcement here..." required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
                 </div>
 
-                <button type="submit">Publish Notice</button>
+                <button type="submit" class="post-btn">Post notice</button>
             </form>
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer: College of Computer Science -->
     <footer class="footer">
-        <h3>COLLEGE OF COMMUNICATION AND INFORMATION TECHNOLOGY</h3>
-        <p>© 2026 University of Northern Philippines. All rights reserved.</p>
+        <p>College of Computer Science</p>
     </footer>
 
 </div>
