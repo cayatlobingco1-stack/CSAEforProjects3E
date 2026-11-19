@@ -1,56 +1,82 @@
-<!doctype html>
-<html lang"en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport"
-			content="width=device-width,
-			initial-scale=1" />
-			<title>Campus Notices</title>
-			<link rel="stylesheet" href="styles.css" />
-	</head>	
-	<body>
-		<div class="bg1">
-			<header><h1>Don Mariano Marcos Memorial State University</h1></header>
-		</div>
-		<nav>
-			<a href="Notices.html">Read Notices </a><a href=""> About Us </a>
-		</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Notices - UNP</title>
+    <link rel="stylesheet" href="week2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-		<main>
-			<section>
-				<h1>Campus Notices</h1>
-			</section>
-			<section>
-				<h1>Hail Beloved Alma Matter</h1>
-			</section>
-		</main>
-		
-		<h2>Campus Notices</h2>
-		<h3>Campus Notices</h3>
-		<h4>Campus Notices</h4>
-		<h5>Campus Notices</h5>
-		<h6>Campus Notices</h6>
+<div class="container">
 
-		
+    <!-- Header -->
+    <header class="header">
+        <img src="UNPlogo.webp" alt="UNP Logo" class="logo">
+        <div class="header-text">
+            <h1>University of Northern Philippines</h1>
+            <p>Vigan City, Ilocos Sur • Campus Bulletin & Notice Board</p>
+        </div>
+    </header>
 
-		<ol>
-		<li> Ma'am Haydee </li>
-		<li> Sir Zee </li>
-		<li> Ma'am Jocelyn </li>
-		</ol>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="active">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT US</a>
+    </nav>
 
-		<ul>
-		<li> Sir Francis </li>
-		<li> Ma'am Cla </li>
-		<li> Ma'am Lucille </li>
-		</ul>
+    <!-- Main Content Grid -->
+    <main class="main-grid">
+        
+        <!-- Left Side: Campus Highlights / Gallery -->
+        <section class="card gallery-section">
+            <h3>Campus Highlights</h3>
+            <p class="section-desc">Featured snapshots and updates around the university.</p>
+            
+            <div class="gallery">
+                <div class="img-card">
+                    <img src="UNPl.webp" alt="campus">
+                </div>
+                <div class="img-card">
+                    <img src="university-of-northern-philippines-1024x706.webp" alt="campus">
+                </div>
+                <div class="img-card">
+                    <img src="Campus-image_TXaYf-pTIV.webp" alt="campus">
+                </div>
+            </div>
+        </section>
 
-		<img src= "OIP.jpg" width="400" height="400">
+        <!-- Right Side: Post a Notice -->
+        <section class="card form-section">
+            <h3>Post a Notice</h3>
+            <p class="section-desc">Share important announcements with UNP students and faculty.</p>
 
-		<footer><h3>College of Computer Science</h3></footer>
-		<button type="submit" class="btn">Post Notice</button>
+            <form>
+                <div class="form-group">
+                    <label for="title">Notice Title</label>
+                    <input type="text" id="title" name="title" placeholder="" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="message">Message Details</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write the full announcement here..." required></textarea>
+                </div>
 
+                <button type="submit">Publish Notice</button>
+            </form>
+        </section>
 
-	</body>
-	</html>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3>COLLEGE OF COMMUNICATION AND INFORMATION TECHNOLOGY</h3>
+        <p>© 2026 University of Northern Philippines. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

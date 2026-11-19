@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    padding: 30px 15px;
+    background: linear-gradient(
+        rgba(238, 243, 250, 0.88),
+        rgba(238, 243, 250, 0.92)
+    ), url("unp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Main Wrapper */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 35, 80, 0.1);
+    overflow: hidden;
+    border-top: 6px solid #003380; /* UNP Royal Blue */
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header .logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.header-text h1 {
+    font-size: 1.65rem;
+    color: #002663;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.header-text p {
+    font-size: 0.9rem;
+    color: #5a687c;
+    margin-top: 4px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #003380;
+    padding: 12px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 8px 20px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #f5b800; /* UNP Gold accent */
+    color: #001f4d;
+    font-weight: 600;
+}
+
+/* Content Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 30px;
+    background-color: #f7f9fc;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 35, 80, 0.05);
+    border: 1px solid #e6ecf5;
+}
+
+.card h3 {
+    color: #002663;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.section-desc {
+    font-size: 0.85rem;
+    color: #6b778c;
+    margin-bottom: 20px;
+}
+
+/* Fixed & Improved Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.img-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.img-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fcfdfe;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #003380;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 51, 128, 0.12);
+}
+
+button {
+    width: 100%;
+    background-color: #003380;
+    color: white;
+    border: none;
+    padding: 13px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #002255;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f4d;
+    color: #ffffff;
+}
+
+.footer h3 {
+    font-size: 0.95rem;
+    letter-spacing: 0.8px;
+    color: #f5b800;
+    margin-bottom: 4px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
